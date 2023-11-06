@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #1c92d2, #f2fcfe);
+}
+
+.text-center {
+  align-content: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.image-container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estilos para os botões */
+.botao-sobre,
+.botao-mestre,
+.botao-contato {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1c92d2;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Efeito de hover para os botões */
+.botao-sobre:hover,
+.botao-mestre:hover,
+.botao-contato:hover {
+  background-color: #0b5b8a;
+}
+
+/* Centralizar o texto nos botões */
+.botao-sobre,
+.botao-mestre,
+.botao-contato {
+  text-align: center;
+}
+
+/* Remover o sublinhado dos links */
+.botao-sobre,
+.botao-mestre,
+.botao-contato {
+  text-decoration: none;
+}
+
+#mestre .mestre-content {
+  display: flex;
+}
+
+#mestre .mestre-content p {
+  flex: 1; /* Permite que o texto ocupe todo o espaço restante na largura */
+}
+
+#mestre .mestre-content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.mestre-img {
+  width: 100%;
+  display: grid;
+  align-content: center;
+}
+
+.mestre-text {
+  display: grid;
+  margin-left: 20px;
+  text-align: left;
+  align-content: center;
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contato {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1071px) {
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  #mestre .mestre-content {
+    display: block !important;
+  }
+  .mestre-img {
+    width: 80%;
+    margin: auto;
+  }
+  .mestre-text {
+    margin: auto;
+  }
+  .image-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
